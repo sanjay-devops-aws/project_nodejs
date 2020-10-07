@@ -3,7 +3,7 @@ pipeline{
     
     stage('GIT CHECKOUT')
     {
-       git credentialsId: 'cbc24122-81d4-4adc-84a9-dc471ca3bfeb', url: 'https://github.com/KanchanVarma/node.git'
+       git credentialsId: 'cbc24122-81d4-4adc-84a9-dc471ca3bfeb', url: 'https://github.com/sanjay-devops-aws/project_nodejs.git'
     }
 		
     

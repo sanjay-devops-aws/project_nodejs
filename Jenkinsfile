@@ -23,7 +23,7 @@ pipeline{
     stage('PULL FROM DOCKERHUB')
     {
        withDockerRegistry(credentialsId: '52cf0393-f2c5-415b-8e6a-0020a69dc588', url: 'https://index.docker.io/v1/') {
-             sh 'docker pull kanchanv/node:1.0'  
+             sh 'docker pull sanju/node:1.0'  
        }
     }
     
@@ -31,7 +31,7 @@ pipeline{
     {
       dir('/var/lib/jenkins/workspace/node')
       {
-         sh 'kubectl apply -f deployment.yaml'
+         sh 'kubectl apply -f Deployment.yml'
       }
     }
     
